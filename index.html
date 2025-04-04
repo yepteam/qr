@@ -17,18 +17,20 @@
     QR
 </h1>
 <script>
-    let qrcode = new QRCode({
-        content: "qr.yep.team",
-        padding: 4,
-        width: 512,
-        height: 512,
-        color: "#673AB7",
-        background: "#ffffff",
-        ecl: "M",
-    });
-    qrcode.save("sample.svg", function(error) {
-        if (error) throw error;
-        console.log("Done!");
+    document.addEventListener('DOMContentLoaded', function() {
+        var qrcode = new QRCode({
+            content: "qr.yep.team",
+            padding: 4,
+            width: 512,
+            height: 512,
+            color: "#673AB7",
+            background: "#ffffff",
+            ecl: "M",
+        });
+        qrcode.save("sample.svg", function(error) {
+            if (error) throw error;
+            console.log("Done!");
+        });
     });
 </script>
 </body>
