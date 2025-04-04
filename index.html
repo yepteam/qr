@@ -10,7 +10,6 @@
             --color-deep-purple: #673AB7;
         }
     </style>
-    <script src="qrcode.min.js"></script>
 </head>
 <body>
 <h1 class="text-5xl font-bold text-deep-purple">
@@ -18,19 +17,7 @@
 </h1>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var qrcode = new QRCode({
-            content: "qr.yep.team",
-            padding: 4,
-            width: 512,
-            height: 512,
-            color: "#673AB7",
-            background: "#ffffff",
-            ecl: "M",
-        });
-        qrcode.save("sample.svg", function(error) {
-            if (error) throw error;
-            console.log("Done!");
-        });
+        console.log("!");
     });
 </script>
 </body>
